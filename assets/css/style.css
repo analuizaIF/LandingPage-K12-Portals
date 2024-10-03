@@ -27,8 +27,11 @@
 
 /*Temas*/
 .cry-baby-theme{
-    --page-background: ;
-    
+    --page-background: linear-gradient(to right, 
+    rgba(181, 95, 117, 1) 10.276679841897234%, 29.397233201581027%, 
+    rgba(168, 180, 219, 1) 48.51778656126482%, 70.15810276679842%, 
+    rgba(65, 79, 121, 1) 91.79841897233202%
+    );
 
     --header-background-color: ;
     --highlight-color: ;
