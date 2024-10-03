@@ -5,17 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K12 - Melanie Martinez</title>
 </head>
-<body>
+<body class="k12-theme">
     <header>
+        <div>
+            <img class="invert-element" src="assets/images/banner/castelo-k12.jpg" alt="imagem castelo">
+            <p class="invert-element">A estética do álbum é única, cada faixa revela uma lição sobre autenticidade e autoexpressão. Prepare-se para questionar o que realmente importa dentro e fora dos muros dessa escola.</p>
+            <button type="button" id="switch-theme-button" onclick="switchTheme()">Rip Cry baby</button>
+        </div>
 
+        <div id="top-personagens" class="world-characters"></div>
     </header>
 
     <main>
+        <div id="bottom-personagens" class="world-characters"></div>
+
+        <section id="section-k12-world" class="container">
+            <div class="section-texts">
+                <h2>Drama Club</h2>
+                <p></p>
+            </div>
+
+            <img src="assets/images/gallery/" alt="drama club">
+        </section>
+
+        <section id="section-k12-world-trailer" class="container">
+            <div class="video-frame">
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/2HtaIvb61Uk?si=UVYvZ1CxrXbFYgcz" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="section-texts">
+                <h2>Detention</h2>
+                <p></p>
+            </div>
+        </section>
+
+        <section id="section-k12-world-gallery">
+            <div>
+                <h2>gallery</h2>
+                <div>
+                    <div class="container section-text">
+                        <img src="" alt="orange juice">
+                    </div>
+                    <div class="container section-text">
+                        <img src="" alt="strawberry cake">
+                    </div>
+                    <div class="container section-text">
+                        <img src="" alt="whells the bus">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-form" class="container">
+            <h2>Lunchbox Friends</h2>
+            <p></p>
+
+            <div>
+                <h3>Entre para o clube de D&D e tenha experiências de <span>outro mundo<span></span></h3>
+            </div>
+            <img id="imagem-lado" src="" alt="img ao lado do h3">
+        </section>
 
     </main>
 
     <footer>
-        
+        <p>Projeto construído para fins pessoais, página inspirada em:<a href="https://github.com/digitalinnovationone/semana-frontend-mundo-invertido" class="inspiracao-pag">Mundo Invertido</a></p>
+        <img src="" alt="">
     </footer>
+
+    <script>
+        function switchTheme() {
+        document.body.classList.toggle('portals-theme');
+        document.body.classList.toggle('k12-theme');
+
+        const theme = document.body.classList[0];
+
+        }
+    </script>
+
 </body>
 </html>
