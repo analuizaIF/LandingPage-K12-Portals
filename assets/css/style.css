@@ -181,28 +181,29 @@ section {
 }
 
 /*SECAO DOIS*/
-#section-k12-world-trailer.section-texts {
-    width: 50%;
+#section-k12-world-trailer .section-texts {
+    width: 90%;
     text-align: right;
+    justify-content: right;
+    padding-left: 100px;
     padding: auto;
 }
 
 #section-k12-world-trailer .section-texts h2 {
-    max-width: 425px;
     display: inline-block;
 }
 
 #section-k12-world-trailer .video-frame {
-    background-color: var(--primary-color);
+    background-color: var(--crybabe-light-blue);
 }
 
 #section-k12-world-trailer .video-frame iframe {
     position: relative;
     bottom: 24px;
     left: 24px;
-    border: 2px solid;
-    border-image: --page-background;
-    border-image-slice: 10;
+    border: 4px solid;
+    border-image: var(--crybabe-pink);
+    border-image-slice:2;
 }
 
 /*SECAO TRES*/
