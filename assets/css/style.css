@@ -209,12 +209,7 @@ section {
 /*SECAO TRES*/
 #section-k12-world-gallery {
     width: 100%;
-    background: var(--background-lamp-image) 120% / 50% no-repeat;
     justify-content: center;
-}
-
-#section-k12-world-gallery .container {
-    width: 100%;
 }
 
 #section-k12-world-gallery .container h2 {
@@ -224,15 +219,16 @@ section {
 
 #section-k12-world-gallery .gallery-container {
     display: flex;
-    gap: 50px;
+    gap: 80px;
     padding-left: 20px;
 }
 
 #section-k12-world-gallery .gallery-image {
+    border-radius: 5px;
     width: 250px;
     height: 250px;
-    outline: 20px solid var(--highlight-color);
-    border: 3px solid var(--primary-color);
+    outline: 20px solid var(--crybabe-light-blue);
+    border: 3px solid var(--crybaby-more-light-blue);
     box-sizing: initial;
 }
 
@@ -240,7 +236,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 10px solid var(--highlight-color);
+    border: 10px solid var(--crybabe-lilas);
 }
   
 
