@@ -72,13 +72,12 @@ main::before {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url(../images/crybaby/gallery/its-my-party.jpg); /*Cor de fundo das secoes*/
+    background-color: #D9C5D5; /*Cor de fundo das secoes*/
     background-size: cover;
 }
 
 /*CABECALHO - HEADER*/
 header {
-    margin-top: 80px;
     min-height: 850px;
     display: flex;
     flex-direction: column;
@@ -93,7 +92,7 @@ header::before {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url("../images/k12/banner/castelo.png");
+    background-image: url("../images/k12/banner/castelo.png"); /*Corrigir posicao da imagem de fundo*/
     background-size: cover;
     filter: saturate(0);
     opacity: 0.2;
@@ -101,6 +100,7 @@ header::before {
   
 .header-content {
     text-align: center;
+    padding: 100px;
 }
 
 .header-content p {
@@ -165,17 +165,14 @@ section {
 }
 
 /*SECAO UM*/
-
 .container {
-    max-width: 1200px;
-    margin-top: 80px;
-}
-
-#section-k12-world {
-    align-items: center;
+    margin: 100px;
+    padding-bottom: 80px;
 }
 
 #section-k12-world .section-texts {
+    padding: 80px  0 80px;
+    align-items: center;
     width: 50%;
 }
 
@@ -184,10 +181,10 @@ section {
 }
 
 /*SECAO DOIS*/
-
 #section-k12-world-trailer.section-texts {
     width: 50%;
     text-align: right;
+    padding: auto;
 }
 
 #section-k12-world-trailer .section-texts h2 {
@@ -204,10 +201,7 @@ section {
     bottom: 24px;
     left: 24px;
     border: 2px solid;
-    border-image: linear-gradient(
-    var(--primary-color),
-    var(--primary-color-contrast)
-    );
+    border-image: --page-background;
     border-image-slice: 10;
 }
 
@@ -251,6 +245,7 @@ section {
 
 /*RODAPÉ*/
 footer {
+    border: 3px solid var(--crybabe-pink);
     padding: 60px 0;
     background-color: var(--footer-background-color);
     text-align: center;
