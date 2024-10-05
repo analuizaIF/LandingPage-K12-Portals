@@ -1,8 +1,5 @@
 /*Fontes*/
-
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*Variaveis*/
 :root{
@@ -28,6 +25,9 @@
     rgba(205, 170, 140, 1) 53.063241106719374%, 62.94092405083225%, 
     rgba(153, 114, 119, 1) 91.50197628458498%
     );
+
+    --font-family: "Kanit", system-ui;
+    --background-k12-image: url("../images/k12/gallery/first-day-hell.png");
 }
     
 .portals-theme{
@@ -36,6 +36,9 @@
     rgba(164, 107, 113, 1) 46.875%, 73.4375%, 
     rgb(39, 37, 22) 100%
     );
+
+    --font-family: "Kanit", system-ui;
+    --background-portals-image: url("../images/portals/gallery/");
 }
 
 /*Estilizacao Geral*/
@@ -56,13 +59,15 @@ body {
 
 h1,h2 {
     font-size: 3rem;
-    color: #0D0D0D;
+    font-family: var(--font-family);
+    color: var(--k12-black);
     text-transform: uppercase;
     margin-bottom: 40px;
 }
 
 p {
-    color: #0D0D0D;
+    font-family: var(--font-family);
+    color: var(--k12-black);
 }
 
 /*INICIO DA ESTILIZACAO DA PAGINA*/
@@ -149,7 +154,7 @@ section {
 /*SECAO UM*/
 .container {
     margin: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 200px;
 }
 
 #section-k12-world .section-texts {
