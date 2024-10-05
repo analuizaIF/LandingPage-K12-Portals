@@ -185,6 +185,13 @@ section {
 }
 
 /*SECAO TRES*/
+
+#section-k12-world-gallery {
+    width: 100%;
+    background: url(../images/k12/gallery/first-day-hell.png) 130% / 50% no-repeat;
+    justify-content: center;
+  }
+  
 #section-k12-world-gallery {
     width: 100%;
     justify-content: center;
@@ -259,15 +266,36 @@ footer {
   
 footer img{
     height: 50px;
-    width: 100px;
+    width: 400px;
 }
 
 footer p {
     max-width: 700px;
-    margin-bottom: 24px;
+    bottom: -15px;
 }
 
 footer a{
     text-decoration: none;
     color: #D92958;
+}
+
+footer::before,
+footer::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background: url("../images/footer/heart-k12.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -10px;
+}
+
+footer::before {
+  left: 50px;
+  transform: rotateZ(-20deg);
+}
+
+footer::after {
+  right: 50px;
+  transform: rotateZ(20deg);
 }
