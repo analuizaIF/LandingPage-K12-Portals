@@ -28,6 +28,7 @@
 
     --font-family: "Kanit", system-ui;
     --background-k12-image: url("../images/k12/gallery/first-day-hell.png");
+    --footer-k12-image: url("../images/footer/heart-k12.png");
 }
     
 .portals-theme{
@@ -38,7 +39,8 @@
     );
 
     --font-family: "Kanit", system-ui;
-    --background-portals-image: url("../images/portals/gallery/");
+    --background-portals-image: url("../images/footer/");
+    --footer-portals-image: url("../images/footer/");
 }
 
 /*Estilizacao Geral*/
@@ -50,11 +52,7 @@
 }
   
 body {
-    background: linear-gradient(to right, 
-    rgba(199, 146, 140, 1) 26.48221343873518%, 39.77272727272728%, 
-    rgba(205, 170, 140, 1) 53.063241106719374%, 62.94092405083225%, 
-    rgba(153, 114, 119, 1) 91.50197628458498%
-    );
+    background: var( --page-background);
 }
 
 h1,h2 {
@@ -125,7 +123,6 @@ button {
     padding: 16px 32px;
     background-color: transparent;
     font-weight: 900;
-    font-family: var(--featured-font-family);
     font-size: 1.25rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -195,7 +192,7 @@ section {
 
 #section-k12-world-gallery {
     width: 100%;
-    background: url(../images/k12/gallery/first-day-hell.png) 130% / 50% no-repeat;
+    background: var(--background-k12-image) 130% / 50% no-repeat;
 }
   
 #section-k12-world-gallery .container h2 {
@@ -289,7 +286,7 @@ footer::after {
   content: "";
   width: 200px;
   height: 200px;
-  background: url("../images/footer/heart-k12.png") no-repeat;
+  background: var(--footer-k12-image) no-repeat;
   background-size: contain;
   position: absolute;
   bottom: -10px;
