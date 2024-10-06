@@ -27,6 +27,7 @@
     );
 
     --font-family: "Kanit", system-ui;
+    --main-k12-color: #CDAA8C;
     --background-k12-image: url("../images/k12/gallery/first-day-hell.png");
     --footer-k12-image: url("../images/footer/heart-k12.png");
 }
@@ -39,6 +40,7 @@
     );
 
     --font-family: "Kanit", system-ui;
+    --main-portals-color: #;
     --background-portals-image: url("../images/footer/");
     --footer-portals-image: url("../images/footer/");
 }
@@ -81,7 +83,7 @@ main::before {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #CDAA8C; /*Cor de fundo das secoes*/
+    background-color: var(--main-k12-color); /*Cor de fundo das secoes*/
     background-size: cover;
 }
 
