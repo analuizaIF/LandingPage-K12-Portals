@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="../landing-page-K12/assets/images/footer/heart-k12.png" width="400">
+  <img src="https://github.com/user-attachments/assets/6faf726c-dc3b-46f9-a0ec-3195373f9ae8" width="400">
 </div>
 
 # 🎭 RIP CRY BABY
@@ -12,6 +12,7 @@ A Landing Page foi criada para capturar a atmosfera única da trilogia de Melani
 ## 🎨 Temas e Variaveis CSS
 ```css
 /*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*VARIAVEIS*/
 :root{
