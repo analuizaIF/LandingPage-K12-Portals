@@ -28,6 +28,7 @@
 
     --font-family: "Kanit", system-ui;
     --main-k12-color: #CDAA8C;
+    --background-k12-header-image: url("../images/k12/background/castelo-organizado.png");
     --background-k12-image: url("../images/k12/gallery/first-day-hell.png");
     --footer-k12-image: url("../images/footer/heart-k12.png");
 }
@@ -40,7 +41,8 @@
     );
 
     --font-family: "Kanit", system-ui;
-    --main-portals-color: #;
+    --main-portals-color: #CDA0D9;
+    --background-portals-header-image: url("");
     --background-portals-image: url("../images/footer/");
     --footer-portals-image: url("../images/footer/");
 }
@@ -103,7 +105,7 @@ header::before {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url("../images/k12/background/castelo-organizado.png");
+    background-image: var(--background-k12-header-image);
     background-size: cover;
     filter: saturate(0);
     opacity: 0.2;
