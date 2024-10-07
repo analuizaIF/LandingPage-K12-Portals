@@ -232,29 +232,24 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-#section-k12-world-final .section-texts h2{
-    width: 900px;
-    margin: 0 0 40px 80px;
+    margin-top: 50px;
 }
 
 #section-k12-world-final .section-texts p{
-    padding: 0 80px 40px;
+    padding: 0 80px 80px;
 }
 
-#section-k12-world-final .section-texts h3{
-    flex-basis: 30%;
-    text-align: left;
-    margin: 0;
+#section-k12-world-final h3{
+    margin: 70px;
     font-size: 3.5rem;
-    width: 70%;
+    width: 35%;
+    padding-right: 80px;
+    gap: 50px;
+    
 }
 
 #section-k12-world-final .section-img{
-    margin: 0 50px 0 60px;
-    height: 200px;
-    width: 200px;
+    width: 0;   
 }
 
 span{
