@@ -243,13 +243,11 @@ section {
     margin: 70px;
     font-size: 3.5rem;
     width: 35%;
-    padding-right: 80px;
-    gap: 50px;
-    
+    padding-right: 80px;   
 }
 
 #section-k12-world-final .section-img{
-    width: 0;   
+    width: 0; 
 }
 
 span{
