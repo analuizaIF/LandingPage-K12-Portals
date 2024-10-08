@@ -1,17 +1,20 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/6faf726c-dc3b-46f9-a0ec-3195373f9ae8" width="400">
+  <img src="https://github.com/user-attachments/assets/6faf726c-dc3b-46f9-a0ec-3195373f9ae8" width="200">
 </div>
 
 # 🎭 RIP CRY BABY
 ### ✨🎠 Melanie Martinez 
-
 A Landing Page foi criada para capturar a atmosfera única da trilogia de Melanie Martinez. 
 
-### 💖 Made by a Fan 
+#
+### Esboço da página (rascunho)
+<img src="https://github.com/user-attachments/assets/77b88e21-6340-47f2-b64a-38168230f22c"></img>
+
 # 
 ## 🎨 Temas e Variaveis CSS
 ```css
-/*FONTES*/
+/*FONTES*/!
+
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*VARIAVEIS*/
