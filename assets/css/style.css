@@ -42,9 +42,9 @@
 
     --font-family: "Kanit", system-ui;
     --main-portals-color: #CDA0D9;
-    --background-portals-header-image: url("");
-    --background-portals-image: url("../images/footer/");
-    --footer-portals-image: url("../images/footer/");
+    --background-portals-header-image: url("../images/portals/banner/portals-capa.jpg");
+    --background-portals-image: url("../images/portals/gallery/fairy.jpg");
+    --footer-portals-image: url("../images/portals/gallery/criatura-sentada.jpg");
 }
 
 /*Estilizacao Geral*/
@@ -226,28 +226,47 @@ section {
     object-fit: cover;
     border: 10px solid var(--k12-blue);
 }
-  
+
 /*SECAO QUATRO*/
-#section-k12-world-final{
+#section-k12-nymphology-world{
     flex-direction: column;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     margin-top: 50px;
 }
 
-#section-k12-world-final .section-texts p{
-    padding: 0 80px 80px;
+#section-k12-nymphology-world{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#section-k12-world-final h3{
-    margin: 70px;
-    font-size: 3.5rem;
-    width: 35%;
-    padding-right: 80px;   
+#section-k12-nymphology-world p{
+    padding: 0 80px;
+}
+/*SECAO CINCO - FINAL*/
+#section-k12-world-final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#section-k12-world-final .section-img{
-    width: 0; 
+.div-h3 {
+    flex: 1;
+    text-align: left;
+    font-size: 40px;
+    width: 220px;
+    margin-top: -80px;
+}
+
+.div-img img {
+    margin-top: -80px;
+    text-align: right;
+    max-width: 600px;
+    height: auto;
+    margin-left: 110px;
 }
 
 span{
