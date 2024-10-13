@@ -86,11 +86,22 @@
     </footer>
 
     <script>
-        function switchTheme() {
-        document.body.classList.toggle('portals-theme');
-        document.body.classList.toggle('cry-baby-theme');
+        const themeToggle = document.getElementById('switchTheme');
+        const body = document.body;
+        
+        switchTheme.addEventListener('click', function() {
+        if (body.classList.contains('k12-theme')) {
+            body.classList.remove('k12-theme');
+            body.classList.add('portals-theme');
+        } else {
+            body.classList.remove('portals-theme');
+            body.classList.add('k12-theme');
+        }
+    });
 
-        const theme = document.body.classList[0];
+        function switchTheme(){
+            document.body.classList.toggle('k12-theme');
+            document.body.classList.toggle('portals-theme');
         }
     </script>
 
