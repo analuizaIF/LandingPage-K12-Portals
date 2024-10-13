@@ -7,8 +7,8 @@
 A Landing Page foi criada para capturar a atmosfera única da trilogia de Melanie Martinez. 
 
 #
-### Esboço da página (rascunho)
-<img src="https://github.com/user-attachments/assets/77b88e21-6340-47f2-b64a-38168230f22c"></img>
+### Esboço da página (rascunho concluido)
+<img src="https://github.com/user-attachments/assets/159a1596-29f9-4e30-8b3a-c23715680818"></img>
 
 # 
 ## 🎨 Temas e Variaveis CSS
