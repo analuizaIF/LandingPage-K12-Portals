@@ -325,3 +325,7 @@ footer::after {
   right: 50px;
   transform: rotateZ(20deg);
 }
+
+.portals-theme footer img {
+    background-image: url('assets/images/portals/banner/portals-capa.jpg');
+}

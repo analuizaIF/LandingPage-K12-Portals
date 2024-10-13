@@ -13,7 +13,7 @@
     <header>
         <div class="header-content">
             <img class="invert-element" src="assets/images/k12/banner/k12-sem-fundo.png" alt="imagem">
-            <p class="invert-element">A trilogia de álbuns de Melanie Martinez — Cry Baby, K-12 e Portals — 
+            <p>A trilogia de álbuns de Melanie Martinez — Cry Baby, K-12 e Portals — 
                 oferece uma narrativa contínua de crescimento e transformação, 
                 guiando os ouvintes por fases sombrias e desafiadoras da vida. 
                 Cada álbum revela camadas profundas de sua personagem e sua evolução artística. 
@@ -49,14 +49,14 @@
                 <h2>Trilogy</h2>
                 <p>O álbum de estreia de Melanie Martinez, Cry Baby, mergulha em temas de infância com uma visão distorcida e sombria.</p>
                 <div class="gallery-container">
-                    <div class="gallery-image invert-element">
-                        <img src="assets/images/crybaby/gallery/its-my-party.png" alt="Imagem ilustrativa de Cry Baby">
+                    <div class="gallery-image">
+                        <img class="invert-element" src="assets/images/crybaby/gallery/its-my-party.png" alt="Imagem ilustrativa de Cry Baby">
                     </div>
-                    <div class="gallery-image invert-element">
-                        <img src="assets/images/crybaby/gallery/mv-crybabe.png" alt="Imagem ilustrativa de K-12">
+                    <div class="gallery-image">
+                        <img class="invert-element" src="assets/images/crybaby/gallery/mv-crybabe.png" alt="Imagem ilustrativa de K-12">
                     </div>
-                    <div class="gallery-image invert-element">
-                        <img src="assets/images/crybaby/gallery/melanie.png" alt="Imagem ilustrativa de Portals">
+                    <div class="gallery-image">
+                        <img class="invert-element" src="assets/images/crybaby/gallery/melanie.png" alt="Imagem ilustrativa de Portals">
                     </div>
                 </div>
             </div>
@@ -81,29 +81,11 @@
     </main>
 
     <footer>
-        <img src="assets/images/footer/assinatura-sem-fundo.png" alt="Nome Melanie Martinez">
+        <img class="invert-element" src="assets/images/footer/assinatura-sem-fundo.png" alt="Nome Melanie Martinez">
         <p>Esta página foi criada apenas para diversão e admiração! Página inspirada em: <a href="https://github.com/analuizaIF/semana-frontend-mundo-invertido" target="_blank" class="inspiracao-pag">Mundo Invertido</a></p>
     </footer>
 
-    <script>
-        const themeToggle = document.getElementById('switchTheme');
-        const body = document.body;
-        
-        switchTheme.addEventListener('click', function() {
-        if (body.classList.contains('k12-theme')) {
-            body.classList.remove('k12-theme');
-            body.classList.add('portals-theme');
-        } else {
-            body.classList.remove('portals-theme');
-            body.classList.add('k12-theme');
-        }
-    });
-
-        function switchTheme(){
-            document.body.classList.toggle('k12-theme');
-            document.body.classList.toggle('portals-theme');
-        }
-    </script>
+   <script src="./assets/js/main.js"></script>
 
 </body>
 </html>
