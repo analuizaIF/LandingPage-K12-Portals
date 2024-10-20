@@ -30,7 +30,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    transition: 1s;
+    transition: 1.3s;
     z-index: 2;
 }
   
@@ -53,7 +53,8 @@ h1,h2 {
 
 p {
     font-family: var(--font-family);
-    color: var(--k12-black);
+    color: black;
+    font-weight: 500;
 }
 
 /*INICIO DA ESTILIZACAO DA PAGINA*/
@@ -119,31 +120,32 @@ header::before {
     font-size: 16px;
 }
 
-a{
+.header-content a{
     text-decoration: none;
+    color: #0D0D0D;
 }
-
-button {
+.rip-cry-baby {
     font-family: var(--font-family);
-    padding: 16px 32px;
-    background-color: transparent;
     font-weight: 800;
     font-size: 1.25rem;
+    padding: 16px 34px;
+    background-color: transparent;
     text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 6px;
+    border-radius: 8px;
     transition: 1.2s;
+    cursor: pointer;
 }
 
-.header-content button {
+.rip-cry-baby {
     border: 3px solid #D92958;
-    color: #A67E7B;
+    color: black;
     margin: 24px;
 }
 
-.header-content button:hover {
-    background-color: rgba(164, 107, 113, 1);
-    color: black;
+.rip-cry-baby:hover{
+    border-color: #A67E7B;
+    background-color: #A67E7B;
+    color: black; 
 }
 
 /**SECTIONS STYLES**/
@@ -167,6 +169,7 @@ section {
 
 #section-k12-world img{
     width: 650px;
+    outline: 4px solid #D92958;
 }
 
 /*SECAO DOIS*/
@@ -269,18 +272,19 @@ section {
 .div-h3 {
     flex: 1;
     text-align: left;
-    font-size: 40px;
-    width: 190px;
+    font-size: 38px;
+    width: 220px;
     margin-top: -80px;
     margin-left: 100px;
     font-weight: 400;
     font-family: var(--font-family);
+    text-transform: uppercase;
 }
 
 .div-img img {
     margin-top: -80px;
     text-align: right;
-    max-width: 600px;
+    max-width: 500px;
     height: auto;
     margin-left: 110px;
 }
