@@ -1,0 +1,313 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+/*Portals*/
+    --portals-dark-pink:#8C4552;
+    --portals-lilas: #CDA0D9;
+    --portals-gray: #8C745E;
+    --portals-white: #F2E2DC;
+    --portals-pink: #F2A0A0;
+}
+    
+/*Temas*/  
+.portals-theme{
+    --page-background:linear-gradient(to right, 
+    rgba(42, 40, 27, 1) 0%, 23.4375%, 
+    rgba(164, 107, 113, 1) 46.875%, 73.4375%, 
+    rgb(39, 37, 22) 100%
+    );
+
+    --font-family: "Kanit", system-ui;
+    --main-portals-color: #CDA0D9;
+    --background-portals-header-image: url("../images/portals/banner/portals-capa.jpg");
+    --background-portals-image: url("../images/portals/gallery/fairy.jpg");
+    --footer-portals-image: url("../images/portals/gallery/criatura-sentada.jpg");
+}
+
+/*Estilizacao Geral*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: 1s;
+    z-index: 2;
+}
+  
+body {
+    background: var( --page-background);
+}
+
+h1,h2 {
+    font-size: 3.5rem;
+    font-family: var(--font-family);
+    color: var(--k12-black);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: var(--font-family);
+    color: var(--k12-black);
+}
+
+/*INICIO DA ESTILIZACAO DA PAGINA*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+  
+main::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--main-portals-color); /*Cor de fundo das secoes*/
+    background-size: cover;
+}
+
+#img{
+    border-radius: 25px;
+}
+
+/*CABECALHO - HEADER*/
+header {
+    min-height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family:var(--font-family);
+    
+}
+  
+header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: var(--background-k12-header-image);
+    background-size: cover;
+    filter: saturate(0);
+    opacity: 0.2;
+}
+  
+.header-content {
+    text-align: center;
+    padding: 100px;
+}
+
+.header-content img{
+    width: 350px;
+    height: 350px;
+}
+
+.header-content p {
+    width: 750px;
+    margin: 30px 40px;
+    font-size: 16px;
+}
+
+button {
+    font-family: var(--font-family);
+    padding: 16px 32px;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 1s;
+}
+
+.header-content button {
+    border: 3px solid #D92958;
+    color: var(--k12-black);
+    margin: 24px;
+}
+
+.header-content button:hover {
+    border-color: var(--k12-pink);
+    background-color: var(--k12-pink);
+    color: var(--k12-black);
+}
+
+/**SECTIONS STYLES**/
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+/*SECAO UM*/
+.container {
+    margin: 100px;
+    padding-bottom: 40px;
+}
+
+#section-k12-world .section-texts {
+    padding: 80px  0 80px;
+    align-items: center;
+    width: 50%;
+}
+
+#section-k12-world img{
+    width: 650px;
+}
+
+/*SECAO DOIS*/
+#section-k12-world-trailer .section-texts {
+    margin: -30px 14px;
+    text-align: right;
+    justify-content: right;
+}
+
+#section-k12-world-trailer .section-texts h2 {
+    display: inline-block;
+}
+
+#section-k12-world-trailer .section-texts p{
+    margin-left: 60px;
+}
+
+#section-k12-world-trailer .video-frame {
+    background-color: #D92958;
+}
+
+#section-k12-world-trailer .video-frame iframe {
+    position: relative;
+    left: 14px;
+    border: 2px solid;
+    border-color: #D92958;
+    border-image-slice: 3;
+}
+
+/*SECAO TRES*/
+
+#section-k12-world-gallery {
+    width: 100%;
+    background: var(--background-k12-image) 130% / 50% no-repeat;
+}
+  
+#section-k12-world-gallery .container h2 {
+    width: 800px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#section-k12-world-gallery .gallery-container {
+    display: flex;
+    gap: 80px;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+
+#section-k12-world-gallery .gallery-image {
+    width: 250px;
+    height: 250px;
+    outline: 20px solid #D92958;
+    border: 3px solid var(--k12-light-gray);
+    box-sizing: initial;
+}
+
+#section-k12-world-gallery .gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 10px solid var(--k12-blue);
+}
+
+/*SECAO QUATRO*/
+#section-k12-nymphology-world{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#section-k12-nymphology-world{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section-k12-nymphology-world p{
+    padding: 0 80px;
+}
+/*SECAO CINCO - FINAL*/
+#section-k12-world-final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-h3 {
+    flex: 1;
+    text-align: left;
+    font-size: 40px;
+    width: 220px;
+    margin-top: -80px;
+    margin-left: 90px
+}
+
+.div-img img {
+    margin-top: -80px;
+    text-align: right;
+    max-width: 600px;
+    height: auto;
+    margin-left: 110px;
+}
+
+span{
+    color: #D92958;
+}
+
+/*RODAPÉ*/
+footer {
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+  
+footer img{
+    height: 50px;
+    width: 400px;
+}
+
+footer p {
+    max-width: 700px;
+    bottom: -15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #D92958;
+}
+
+footer::before,
+footer::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background: var(--footer-k12-image) no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -10px;
+}
+
+footer::before {
+  left: 50px;
+  transform: rotateZ(-20deg);
+}
+
+footer::after {
+  right: 50px;
+  transform: rotateZ(20deg);
+}

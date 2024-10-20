@@ -93,6 +93,10 @@ main::before {
     border-radius: 25px;
 }
 
+strong{
+    color: #D92958;
+}
+
 /*CABECALHO - HEADER*/
 header {
     min-height: 850px;
@@ -218,6 +222,9 @@ section {
     margin-bottom: 20px;
 }
 
+#section-k12-world-gallery .section-text p{
+    width: 60%;
+}
 #section-k12-world-gallery .gallery-container {
     display: flex;
     gap: 80px;
@@ -269,9 +276,10 @@ section {
 .div-h3 {
     flex: 1;
     text-align: left;
-    font-size: 40px;
+    font-size: 18px;
     width: 220px;
     margin-top: -80px;
+    margin-left: 90px
 }
 
 .div-img img {
@@ -331,8 +339,4 @@ footer::before {
 footer::after {
   right: 50px;
   transform: rotateZ(20deg);
-}
-
-.portals-theme footer img {
-    background-image: url('assets/images/portals/banner/portals-capa.jpg');
 }
