@@ -11,14 +11,7 @@
     --k12-more-light-blue: #88B5BF;
 }
 
-/*Tema*/
 .k12-theme{
-    --page-background:linear-gradient(to right, 
-    rgba(199, 146, 140, 1) 26.48221343873518%, 39.77272727272728%, 
-    rgba(205, 170, 140, 1) 53.063241106719374%, 62.94092405083225%, 
-    rgba(153, 114, 119, 1) 91.50197628458498%
-    );
-
     --font-family: "Kanit", system-ui;
     --main-k12-color: #CDAA8C;
     --background-k12-header-image: url("../images/k12/background/castelo.png");
@@ -40,7 +33,7 @@
 }
 
 body {
-    background: var( --page-background);
+    background: linear-gradient(90deg, rgba(199,146,140,1) 0%, rgba(205,170,140,1) 50%, rgba(153,114,119,1) 100%);
 }
 
 h1,h2 {
@@ -168,8 +161,7 @@ section {
 }
 
 #section-k12-world img{
-    width: 650px;
-    outline: 4px solid #D92958;
+    width: 600px;
 }
 
 /*SECAO DOIS*/
