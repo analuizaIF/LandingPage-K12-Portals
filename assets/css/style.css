@@ -109,7 +109,7 @@ header::before {
 }
 
 .header-content img{
-    width: 350px;
+    width: 380px;
     height: auto;
 }
 
@@ -127,27 +127,23 @@ button {
     font-family: var(--font-family);
     padding: 16px 32px;
     background-color: transparent;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1.25rem;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 6px;
-    transition: 1s;
+    transition: 1.2s;
 }
 
 .header-content button {
     border: 3px solid #D92958;
-    color: #4A7A8C;
+    color: #A67E7B;
     margin: 24px;
 }
 
 .header-content button:hover {
-    background-color: linear-gradient(to right, 
-    rgba(42, 40, 27, 1) 0%, 23.4375%, 
-    rgba(164, 107, 113, 1) 46.875%, 73.4375%, 
-    rgb(39, 37, 22) 100%
-    );
-    color: white;
+    background-color: rgba(164, 107, 113, 1);
+    color: black;
 }
 
 /**SECTIONS STYLES**/
@@ -196,7 +192,7 @@ section {
     position: relative;
     left: 14px;
     border: 2px solid;
-    border-color: var(--k12-light-gray);
+    border-color: #D92958;
     border-image-slice: 4;
 }
 
@@ -228,7 +224,7 @@ section {
 #section-k12-world-gallery .gallery-image {
     width: 250px;
     height: 250px;
-    outline: 20px solid var(--k12-black);
+    outline: 20px solid #A67E7B;
     border: 3px solid #D92958;
     box-sizing: initial;
     border-radius: 20px;
