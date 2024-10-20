@@ -29,12 +29,17 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    transition: 1s;
+    transition: 1.3s;
     z-index: 2;
 }
   
+*::selection{
+    background-color: #D92958;
+    color: #88B5BF;
+}
+
 body {
-    background: var( --page-background);
+    background: linear-gradient(90deg, rgba(199,146,140,1) 0%, rgba(205,170,140,1) 50%, rgba(153,114,119,1) 100%);
 }
 
 h1,h2 {
@@ -47,7 +52,8 @@ h1,h2 {
 
 p {
     font-family: var(--font-family);
-    color: var(--k12-black);
+    color: black;
+    font-weight: 500;
 }
 
 /*INICIO DA ESTILIZACAO DA PAGINA*/
@@ -63,12 +69,16 @@ main::before {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: var(--main-portals-color); /*Cor de fundo das secoes*/
+    background-color: var(--main-k12-color); /*Cor de fundo das secoes*/
     background-size: cover;
 }
 
 #img{
     border-radius: 25px;
+}
+
+strong{
+    color: #D92958;
 }
 
 /*CABECALHO - HEADER*/
@@ -99,8 +109,8 @@ header::before {
 }
 
 .header-content img{
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: auto;
 }
 
 .header-content p {
@@ -109,28 +119,32 @@ header::before {
     font-size: 16px;
 }
 
-button {
+.header-content a{
+    text-decoration: none;
+    color: #0D0D0D;
+}
+.rip-cry-baby {
     font-family: var(--font-family);
-    padding: 16px 32px;
-    background-color: transparent;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1.25rem;
+    padding: 16px 34px;
+    background-color: transparent;
     text-transform: uppercase;
+    border-radius: 8px;
+    transition: 1.2s;
     cursor: pointer;
-    border-radius: 6px;
-    transition: 1s;
 }
 
-.header-content button {
+.rip-cry-baby {
     border: 3px solid #D92958;
-    color: var(--k12-black);
+    color: black;
     margin: 24px;
 }
 
-.header-content button:hover {
-    border-color: var(--k12-pink);
-    background-color: var(--k12-pink);
-    color: var(--k12-black);
+.rip-cry-baby:hover{
+    border-color: #A67E7B;
+    background-color: #A67E7B;
+    color: black; 
 }
 
 /**SECTIONS STYLES**/
@@ -153,7 +167,7 @@ section {
 }
 
 #section-k12-world img{
-    width: 650px;
+    width: 600px;
 }
 
 /*SECAO DOIS*/
@@ -180,7 +194,7 @@ section {
     left: 14px;
     border: 2px solid;
     border-color: #D92958;
-    border-image-slice: 3;
+    border-image-slice: 4;
 }
 
 /*SECAO TRES*/
@@ -196,30 +210,37 @@ section {
     margin-bottom: 20px;
 }
 
+#section-k12-world-gallery .section-text p{
+    width: 60%;
+}
+
 #section-k12-world-gallery .gallery-container {
     display: flex;
     gap: 80px;
     padding-left: 20px;
     margin-top: 40px;
+    
 }
 
 #section-k12-world-gallery .gallery-image {
     width: 250px;
     height: 250px;
-    outline: 20px solid #D92958;
-    border: 3px solid var(--k12-light-gray);
+    outline: 20px solid #A67E7B;
+    border: 3px solid #D92958;
     box-sizing: initial;
+    border-radius: 20px;
 }
 
 #section-k12-world-gallery .gallery-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 10px solid var(--k12-blue);
+    border: 10px solid rgba(199, 146, 140, 1);
+    border-radius: 20px;
 }
 
 /*SECAO QUATRO*/
-#section-k12-nymphology-world{
+#section-k12-nursers-world{
     flex-direction: column;
     display: flex;
     justify-content: space-between;
@@ -228,15 +249,17 @@ section {
     margin-top: 50px;
 }
 
-#section-k12-nymphology-world{
+#section-k12-nursers-world{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#section-k12-nymphology-world p{
+#section-k12-nursers-world p{
     padding: 0 80px;
+    
 }
+
 /*SECAO CINCO - FINAL*/
 #section-k12-world-final{
     display: flex;
@@ -247,16 +270,19 @@ section {
 .div-h3 {
     flex: 1;
     text-align: left;
-    font-size: 40px;
+    font-size: 38px;
     width: 220px;
     margin-top: -80px;
-    margin-left: 90px
+    margin-left: 100px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    text-transform: uppercase;
 }
 
 .div-img img {
     margin-top: -80px;
     text-align: right;
-    max-width: 600px;
+    max-width: 500px;
     height: auto;
     margin-left: 110px;
 }
@@ -278,7 +304,7 @@ footer {
   
 footer img{
     height: 50px;
-    width: 400px;
+    width: 300px;
 }
 
 footer p {
