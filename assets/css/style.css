@@ -28,7 +28,7 @@
 
     --font-family: "Kanit", system-ui;
     --main-k12-color: #CDAA8C;
-    --background-k12-header-image: url("../images/k12/background/castelo-organizado.png");
+    --background-k12-header-image: url("../images/k12/background/castelo.png");
     --background-k12-image: url("../images/k12/gallery/first-day-hell.png");
     --footer-k12-image: url("../images/footer/heart-k12.png");
 }
@@ -89,6 +89,9 @@ main::before {
     background-size: cover;
 }
 
+#img{
+    border-radius: 25px;
+}
 
 /*CABECALHO - HEADER*/
 header {
@@ -115,6 +118,11 @@ header::before {
 .header-content {
     text-align: center;
     padding: 100px;
+}
+
+.header-content img{
+    width: 350px;
+    height: 350px;
 }
 
 .header-content p {
@@ -167,8 +175,7 @@ section {
 }
 
 #section-k12-world img{
-    width: 600px;
-    height: auto;
+    width: 650px;
 }
 
 /*SECAO DOIS*/
