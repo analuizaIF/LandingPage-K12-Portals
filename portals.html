@@ -6,13 +6,13 @@
     <meta name="description" content="Landing Page insirada na discografia da cantora Melanie Martinez">
     <meta name="author" content="analuizaIF">
 
-    <link rel="stylesheet" href="assets/css/style-portals.css">
-    <title>K-12 | Melanie Martinez</title>
+    <link rel="stylesheet" href="assets/css/portals.css">
+    <title>Portals | Melanie Martinez</title>
 </head>
 <body class="k12-theme">
     <header>
         <div class="header-content">
-            <img src="assets/images/k12/banner/k12-formatada.png" alt="imagem">
+            <img src="assets/images/portals/banner/portals.png" alt="imagem">
             <p>O álbum Portals de Melanie Martinez, lançado em 2023, representa uma transformação significativa em sua carreira artística. O tema central do álbum gira em torno da morte, renascimento e crescimento pessoal, simbolizando a evolução da personagem "Cry Baby" para uma nova entidade. Martinez explora tópicos profundos, como a luta com a identidade, a percepção pública e a superação de escuridões internas.</p>
             <button type="button" class="rip-cry-baby"><a href="k12.html">Rip Cry baby</a></button>
         </div>
@@ -21,16 +21,18 @@
     <main>
         <section id="section-k12-world" class="container">
             <div class="section-texts">
-                <h2>"Your <span>heart's</span> too big for your body!"</h2>
+                <h2>I gotta escape the <span>void</span>, there is no other choice, yeah</h2>
                 <p>O álbum Portals de Melanie Martinez, lançado em 2023, representa uma evolução significativa em sua música e persona artística. Conhecida por contar histórias por meio de sua personagem "Cry Baby", este álbum marca uma mudança em relação aos trabalhos anteriores, apresentando um som mais profundo e maduro. O álbum alcançou o 2º lugar na Billboard 200 e estreou no 1º lugar em vários países, como Austrália e Nova Zelândia, misturando elementos de pop alternativo e cinematográficos.</p>
             </div>
 
-            <img id="img" src="assets/images/k12/banner/bus-castelo.png" alt="Imagem Ilustrativa de K-12">
+            <img id="img" src="assets/images/portals/banner/portals-perfil.jpg" alt="Imagem Ilustrativa de K-12">
         </section>
 
         <section id="section-k12-world-trailer" class="container">
             <div class="video-frame">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Nhx9QDuqpDM?si=SO6avrXbOQxrts9_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <video id="myVideo" autoplay loop>
+                    <source src="./assets/images/portals/frame/portals.mp4">
+                </video>
             </div>
 
             <div class="section-texts">
@@ -45,13 +47,13 @@
                 <p>O álbum começa com <span>"Death"</span>, uma faixa poderosa que aborda o abandono do antigo eu e o recomeço, representando uma declaração audaciosa de renascimento. O single <span>Void</span> ganhou destaque, abordando o conflito emocional de autocrítica e o desejo de mudança, com versos que ressoam profundamente, como "Eu odeio quem eu era antes"</p>
                 <div class="gallery-container">
                     <div class="gallery-image">
-                        <img src="assets/images/k12/gallery/dramaclub.jpg" alt="Imagem Ilustrativa MV DramaClub">
+                        <img src="assets/images/portals/gallery/melanie-mv.jpg" alt="Imagem Ilustrativa MV DramaClub">
                     </div>
                     <div class="gallery-image">
-                        <img src="assets/images/k12/gallery/melanie.jpg" alt="Imagem Ilustrativa MV Show & Tell">
+                        <img src="assets/images/portals/gallery/tunnel-vision.jpg" alt="Imagem Ilustrativa MV Show & Tell">
                     </div>
                     <div class="gallery-image">
-                        <img src="assets/images/k12/gallery/melanie-smile.jpg" alt="Imagem Ilustrativa MV Detention">
+                        <img src="assets/images/portals/gallery/criatura.jpg" alt="Imagem Ilustrativa MV Detention">
                     </div>
                 </div>
             </div>
@@ -69,7 +71,7 @@
                 <h3>"Baby, can you meet me tonight in <span>detention?</span>"</h3>
             </div>
             <div class="div-img">
-                <img id="img" src="assets/images/k12/banner/detention.png" alt="img final">
+                <img id="img" src="assets/images/portals/gallery/fairy.jpg" alt="img final">
             </div>
         </section>
     </main>
@@ -78,6 +80,11 @@
         <img src="assets/images/footer/autografo.png" alt="Nome: Melanie Martinez">
         <p>Esta página foi criada apenas para diversão e admiração! Página inspirada em: <a href="https://github.com/digitalinnovationone/semana-frontend-mundo-invertido" target="_blank" class="inspiracao-pag">Mundo Invertido</a></p>
     </footer>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        video.volume = 0.5;
+    </script>
 
 </body>
 </html>
